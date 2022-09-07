@@ -7,6 +7,7 @@
 
   <ItemGroup>
     <Folder Include="Base\" />
+    <Folder Include="Queries\" />
   </ItemGroup>
 
   <ItemGroup>
@@ -19,5 +20,20 @@
     <PackageReference Include="RazorEngine.NetCore" Version="3.1.0" />
     <PackageReference Include="Refit" Version="6.3.2" />
   </ItemGroup>
+  
+ 	<ItemGroup>
+		<None Update="TestData\Credentials\credentials_transfusion_authcode.json">
+		  <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</None>
+		<None Update="TestData\Credentials\credentials_transfusion_clientcred.json">
+		  <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</None>
+		<None Update="TestData\Credentials\credentials_transfusion_clientcred_invalid.json">
+		  <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</None>		
+		<None Update="TestData\testconfig.local.json">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</None>
+	</ItemGroup> 
 
 </Project>
